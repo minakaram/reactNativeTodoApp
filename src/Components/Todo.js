@@ -41,7 +41,7 @@ const Todo = ({ todo }) => {
 };
 const style = StyleSheet.create({
   todo: {
-    backgroundColor: Platform.OS === "web" ? "#634258" : "rgb(54, 40, 120)",
+    backgroundColor: Platform.OS === "web" ? "#634258" : "rgb(54, 50, 120)",
     marginVertical: 10,
     width: "100%",
     height: 50,
