@@ -12,7 +12,7 @@ const TodoSlice = createSlice({
       state.todos = action.payload;
     },
     addTodo: (state, action) => {
-      const { title, description } = action.payload;
+      const { title, describtion } = action.payload;
       const duplicated = state.todos.some((el) => el.title === title);
       if (duplicated) {
         alert("Todo with the same title already exists.");
@@ -23,7 +23,7 @@ const TodoSlice = createSlice({
           id: Date.now(),
           done: false,
           title,
-          description,
+          describtion,
         };
         state.todos.push(singleTodo);
         AsyncStorage.setItem("todos", JSON.stringify(state.todos))
